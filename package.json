@@ -1,8 +1,8 @@
 {
-  "name": "vvui",
-  "version": "350000.20180808.0",
+  "name": "sx-component",
+  "version": "1.0.0",
   "description": "This is a UI components for Vue 2.x ",
-  "author": "monkey-wang <2424880409@qq.com>",
+  "author": "wwx",
   "main": "packages/index.js",
   "private": false,
   "scripts": {

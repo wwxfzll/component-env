@@ -1,7 +1,7 @@
 <template>
   <div  class="pg-index">
     <div class="index-container">
-      <p>上传组件</p>
+      <p>组件</p>
     </div>
     <div class="separate-panel">
       <div class="about">

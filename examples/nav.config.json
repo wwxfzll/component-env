@@ -18,13 +18,13 @@
   ],
   "组件": [
     {
-      "desc": "上传组件",
+      "desc": "组件",
       "path": "/component",
       "items": [
         {
-          "desc": "Button 按钮",
-          "name": "button",
-          "path": "/button"
+          "desc": "tag 标签",
+          "name": "tag",
+          "path": "/tag"
         }
       ]
     }
