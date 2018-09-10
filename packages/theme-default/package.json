@@ -1,14 +1,13 @@
 {
-  "name": "vv-ui-theme-default",
+  "name": "sx-theme-default",
   "version": "1.0.0",
-  "description": "vv-ui component default theme.",
+  "description": "component default theme.",
   "main": "lib/index.css",
   "scripts": {
     "dev": "gulp build && gulp watch",
     "build": "gulp build"
   },
   "keywords": [
-    "vv-ui",
     "theme"
   ],
   "author": "wwx",
