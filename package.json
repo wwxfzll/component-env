@@ -1,8 +1,8 @@
 {
-  "name": "sx-component",
+  "name": "{{name}}",
   "version": "1.0.0",
-  "description": "This is a UI components for Vue 2.x ",
-  "author": "wwx",
+  "description": "{{description}}",
+  "author": "{{author}}",
   "main": "packages/index.js",
   "private": false,
   "scripts": {
