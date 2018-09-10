@@ -29,14 +29,14 @@
 <template>
   <div class="page-footer">
     <div class="footer-container">
-      <w-row type="flex" justify="space-between">
-        <w-col :span="12" class="text-left">
+      <div type="flex" justify="space-between">
+        <div :span="12" class="text-left">
           <div>
             <p>author: wwx</p>
             <p>email: 276272330@qq.com </p>
           </div>
-        </w-col>
-      </w-row>
+        </div>
+      </div>
     </div>
   </div>
 </template>

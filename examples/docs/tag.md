@@ -1,5 +1,5 @@
 <style>
-  .w__tag{
+  .sx__tag{
     margin-right: 10px;
   }
 </style>
@@ -10,21 +10,21 @@
 由`type`属性来选择tag的类型，也可以通过`color`属性来自定义背景色。
 
 <div class="demo-block">
-  <w-tag>标签一</w-tag>
-  <w-tag color="success">标签二</w-tag>
-  <w-tag color="info">标签三</w-tag>
-  <w-tag color="warning">标签四</w-tag>
-  <w-tag color="danger">标签五</w-tag>
+  <sx-tag>标签一</sx-tag>
+  <sx-tag color="success">标签二</sx-tag>
+  <sx-tag color="info">标签三</sx-tag>
+  <sx-tag color="warning">标签四</sx-tag>
+  <sx-tag color="danger">标签五</sx-tag>
 </div>
 
 ::: demo
 ```html
 
-  <w-tag>标签一</w-tag>
-  <w-tag color="success">标签二</w-tag>
-  <w-tag color="info">标签三</w-tag>
-  <w-tag color="warning">标签四</w-tag>
-  <w-tag color="danger">标签五</w-tag>
+  <sx-tag>标签一</sx-tag>
+  <sx-tag color="success">标签二</sx-tag>
+  <sx-tag color="info">标签三</sx-tag>
+  <sx-tag color="warning">标签四</sx-tag>
+  <sx-tag color="danger">标签五</sx-tag>
 
 ```
 :::
@@ -34,27 +34,27 @@
 ### 可移除标签
 设置```closable```属性可以定义一个标签是否可移除。默认的标签移除时会附带渐变动画，它接受一个Boolean，true 为关闭。
 <div class="demo-block">
-<w-tag
-  :key="tag"
+<sx-tag
+  :key="tag.name"
   v-for="tag in dynamicTags"
   closable
   :disable-transitions="false"
   @close="handleClose(tag)" :color="tag.color">
   {{tag.name}}
-</w-tag>
+</sx-tag>
 <script>
 export default {
     data() {
       return {
         dynamicTags: [{
            name: '标签一',
-           color: 'primary' 
+           color: 'primary'
         }, {
            name: '标签二',
-           color: 'success' 
+           color: 'success'
         }, {
            name: '标签三',
-           color: 'info'           
+           color: 'info'
         }, {
             name: '标签四',
             color: 'danger'
@@ -73,27 +73,27 @@ export default {
 ::: demo
 ```html
 
-<w-tag
-  :key="tag"
+<sx-tag
+  :key="tag.name"
   v-for="tag in dynamicTags"
   closable
   :disable-transitions="false"
   @close="handleClose(tag)" :color="tag.color">
   {{tag.name}}
-</w-tag>
+</sx-tag>
 <script>
 export default {
     data() {
       return {
         dynamicTags: [{
             name: '标签一',
-            color: 'primary' 
+            color: 'primary'
         }, {
            name: '标签二',
-           color: 'success' 
+           color: 'success'
         }, {
            name: '标签三',
-           color: 'info'           
+           color: 'info'
         }, {
             name: '标签四',
             color: 'danger'

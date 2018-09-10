@@ -1,15 +1,15 @@
 <template>
-  <transition name="w-zoom-in-center">
-    <div class="w__tag" :class="'w__tag--'+color">
-      <span class="w__tag--desc"><slot></slot></span>
-      <i class="w-icon-close2 w__tag--close" v-if="closable" @click="hiddenTag"></i>
+  <transition name="sx-zoom-in-center">
+    <div class="sx__tag" :class="'sx__tag--'+color">
+      <span class="sx__tag--desc"><slot></slot></span>
+      <i class="sx-icon-close2 sx__tag--close" v-if="closable" @click="hiddenTag"></i>
     </div>
   </transition>
 </template>
 
 <script>
   export default{
-    name: 'WTag',
+    name: 'SxTag',
     props: {
       closable: Boolean,
       color: {
