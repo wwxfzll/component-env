@@ -1,6 +1,6 @@
 /**
- * @author monkeywang
- * Date: 17/11/12
+ * @author wwx
+ * Date: 18/08/11
  */
 import Tag from './src/tag.vue'
 
