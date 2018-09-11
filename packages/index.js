@@ -2,11 +2,11 @@
  * @author wwx
  * Date: 18/08/23
  */
-import WTag from './tag/index'
+import SxTag from './components/tag/index'
 
 
 const components = [
-  WTag
+  SxTag
 ]
 
 const install = function(Vue) {
@@ -20,5 +20,5 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  WTag
+  SxTag
 }
