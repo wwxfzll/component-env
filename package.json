@@ -1,8 +1,8 @@
 {
-  "name": "{{name}}",
+  "name": "sx-component",
   "version": "1.0.0",
-  "description": "{{description}}",
-  "author": "{{author}}",
+  "description": "This is a UI components for Vue 2.x ",
+  "author": "wwx",
   "main": "packages/index.js",
   "private": false,
   "scripts": {
@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
+    "element-ui": "^2.4.6",
     "fs": "^0.0.1-security",
     "inquirer": "^4.0.0",
     "less": "^2.7.3",
