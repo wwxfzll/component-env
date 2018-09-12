@@ -1,6 +1,6 @@
 {
     "name": "{{name}}",
-    "version": "{{version}",
+    "version": "{{version}}",
     "description": "{{description}}",
     "main": "lib/app.js",
     "directories": {
