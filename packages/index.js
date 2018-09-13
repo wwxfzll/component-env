@@ -4,12 +4,11 @@
  */
 import SxTag from './components/tag/index'
 
-
 const components = [
   SxTag
 ]
 
-const install = function(Vue) {
+const install = function (Vue) {
   if (install.installed) return
   components.map(component => Vue.component(component.name, component))
 }
@@ -18,10 +17,13 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
 
-
-module.exports = {
-  install,
-  SxTag
+let result
+if (process.env.prod) {
+  result = SxTag
+} else {
+  result = {
+    install,
+    SxTag
+  }
 }
-
-module.exports.default = module.exports
+export default result

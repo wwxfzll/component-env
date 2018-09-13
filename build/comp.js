@@ -1,6 +1,7 @@
 var webpack = require('webpack')
 var comp = require('./webpack.comp.conf')
 var fs = require('fs')
+var inquirer = require('inquirer')
 const path = require('path')
 
 var packageJSON = require('../package.json')
@@ -21,9 +22,18 @@ webpack(comp, function (err,stats) {
 
     componentPackageJSON.peerDependencies['vue'] = packageJSON.dependencies['vue']
     componentPackageJSON.peerDependencies['element-ui'] = packageJSON.dependencies['element-ui']
-    var jsonPath = path.resolve(__dirname, '../packages/package.json')
-    var jsonResult = JSON.stringify(componentPackageJSON, null, 4)
-    fs.writeFile(jsonPath, jsonResult, function(err){
-      !err && console.log("write componentPackage.json success");
+    inquirer.prompt([
+      {
+        name: 'version',
+        message: '版本',
+        default: componentPackageJSON.version
+      }
+    ]).then(answer => {
+      componentPackageJSON.version = answer.version
+      var jsonPath = path.resolve(__dirname, '../packages/package.json')
+      var jsonResult = JSON.stringify(componentPackageJSON, null, 4)
+      fs.writeFile(jsonPath, jsonResult, function(err){
+        !err && console.log("write componentPackage.json success");
+      })
     })
 })

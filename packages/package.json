@@ -3,6 +3,7 @@
     "version": "{{version}}",
     "description": "{{description}}",
     "main": "lib/app.js",
+    "style": "theme-default/lib/index.css",
     "directories": {
         "lib": "lib"
     },
