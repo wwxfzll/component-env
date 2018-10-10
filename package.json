@@ -14,12 +14,16 @@
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit/specs",
-    "comp": "node build/comp.js"
+    "comp": "node build/comp.js",
+    "addC": "gulp"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "element-ui": "^2.4.6",
     "fs": "^0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
     "inquirer": "^4.0.0",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
