@@ -5,8 +5,8 @@ var replace = require('gulp-replace')
 
 
 var packageJSON = require('./packages/package.json')
-var packageName = 'sx-upload-dialog'//packageJSON.name
-var author = 'wwx'//packageJSON.author
+var packageName = packageJSON.name//'sx-upload-dialog'
+var author = packageJSON.author//'wwx'
 var tempNames = packageName.split('-')
 var names = []
 tempNames.forEach(function(tempName){
@@ -36,4 +36,4 @@ gulp.task('updateIndexJs',function(){
     gulp.src('')
 })
 
-gulp.task('default', ['addCss'])
+gulp.task('default', ['addComponent','addCss'])
