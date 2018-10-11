@@ -5,7 +5,7 @@ var replace = require('gulp-replace')
 
 
 var packageJSON = require('./packages/package.json')
-var packageName = packageJSON.tempName
+var packageName = packageJSON.name
 var author = packageJSON.author
 var version = packageJSON.version
 var tempNames = packageName.split('-')
