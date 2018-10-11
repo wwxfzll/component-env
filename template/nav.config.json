@@ -1,0 +1,32 @@
+{
+  "开发指南": [
+    {
+      "name": "giud",
+      "path": "/giud",
+      "desc": "介绍"
+    },
+    {
+      "name": "install",
+      "path": "/install",
+      "desc": "安装"
+    },
+    {
+      "name": "index",
+      "path": "/",
+      "type": "pages"
+    }
+  ],
+  "组件": [
+    {
+      "desc": "组件",
+      "path": "/component",
+      "items": [
+        {
+          "desc": "fileName 标签",
+          "name": "fileName",
+          "path": "/fileName"
+        }
+      ]
+    }
+  ]
+}
