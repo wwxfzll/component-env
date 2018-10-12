@@ -6,16 +6,12 @@
   "main": "packages/index.js",
   "private": false,
   "scripts": {
-    "tag": "node build/tag.js",
-    "publish": "node build/publish.js",
+    "addC": "gulp",
     "dev": "node build/dev-server.js",
     "start": "npm run dev",
     "build": "node build/build.js",
-    "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
-    "test": "npm run unit",
-    "lint": "eslint --ext .js,.vue src test/unit/specs",
     "comp": "node build/comp.js",
-    "addC": "gulp"
+    "lint": "eslint --ext .js,.vue src test/unit/specs"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
