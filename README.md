@@ -1,7 +1,7 @@
 # component-env
 
 # 安装
-npm install gulp -g
+0. 安装gulp：npm install gulp -g
 
 二选一：
 1. npm方式：npm install
