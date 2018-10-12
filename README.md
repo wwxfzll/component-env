@@ -23,4 +23,4 @@ yarn install
 6. npm login （用户、密码、邮箱）
 7. 进入packages目录，npm publish 发布到npm库
 8. 访问 http://192.168.118.166:4873/ 查看相应组件内容
-9. npm unpublish 组件名@版本 撤销组件某个版本
+9. npm unpublish 组件名@版本 撤销组件某个版本（慎重）
