@@ -10,7 +10,7 @@ yarn config set phantomjs-prebuilt http://registry.npm.taobao.org/phantomjs-preb
 yarn install
 
 # 规范
-1. 组件命名： 以sx开头（例：上传组件sx-upload-dialog，建议sxw-cli init sx-upload-dialog初始化，不然只能改packages/package.json的name）
+1. 组件命名： 以sx开头、以-为间隔（例：上传组件sx-upload-dialog，建议sxw-cli init sx-upload-dialog初始化，不然只能改packages/package.json的name）
 2. vue风格指南： http://wiki.istrongcloud.com/#/spaces/90a0389fb48048e2ac25deed93ae613b/viewdocuments/b897b216
 3. BEM约定：https://www.w3cplus.com/css/bem-definitions.html
 
