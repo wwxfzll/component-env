@@ -13,6 +13,7 @@
     {
       "name": "index",
       "path": "/",
+      "redirect": "/giud",
       "type": "pages"
     }
   ],
