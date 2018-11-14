@@ -10,6 +10,7 @@
     "dev": "node build/dev-server.js",
     "start": "npm run dev",
     "build": "node build/build.js",
+    "svn": "node build/svn.js",
     "comp": "node build/comp.js",
     "lint": "eslint --ext .js,.vue src test/unit/specs"
   },

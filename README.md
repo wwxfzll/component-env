@@ -18,11 +18,20 @@ yarn install
 1. npm run addC 自动化添加和调整组件及其相关文件内容
 2. npm run dev 组件开发
 3. npm run build 生成组件效果、api的demo页面
-4. npm run comp 编译组件提供外部使用，并为上传到公司npm库做准备
-5. npm set registry http://192.168.118.166:4873/
-6. npm login （用户、密码、邮箱）
-7. 进入packages目录，npm publish 发布到npm库
-8. 访问 http://192.168.118.166:4873/ 查看相应组件内容
-9. npm unpublish 组件名@版本 撤销组件某个版本（慎重）
+4. npm run svn 生成svn版本命令（注意svn安装地址是否与svn_update命令内的地址一致，若不一致需要手动调整svn_update）
+5. npm run comp 编译组件提供外部使用，并为上传到公司npm库做准备
+6. npm config set registry http://192.168.118.166:4873/
+7. npm login （用户、密码、邮箱）
+8. 进入packages目录，npm publish 发布到npm库
+9. 访问 http://192.168.118.166:4873/ 查看相应组件内容
+10. npm unpublish 组件名@版本 撤销组件某个版本（慎重）
+
+# 切换源
+1. npm:
+npm config set registry http://192.168.118.166:4873/
+npm config set registry https://registry.npm.taobao.org
+2. yarn:
+yarn config set registry https://registry.npm.taobao.org
+
 
 ### author:wwx
