@@ -28,6 +28,7 @@
       }
     },
     mounted () {
+      this.$router.push({name: 'guid'})
     },
     components: {
       mainHeader,
