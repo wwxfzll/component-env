@@ -27,9 +27,6 @@
         this.isIndex = this.$route.name === 'index'
       }
     },
-    mounted () {
-      this.$router.push({name: 'guid'})
-    },
     components: {
       mainHeader,
       sideNav

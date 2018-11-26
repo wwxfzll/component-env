@@ -17,6 +17,9 @@
       return {
         height: document.documentElement.clientHeight
       }
+    },
+    mounted () {
+      this.$router.push({name: 'giud'})
     }
   }
 </script>
