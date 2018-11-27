@@ -11,6 +11,11 @@
       "desc": "安装"
     },
     {
+      "name": "use",
+      "path": "/use",
+      "desc": "使用"
+    },
+    {
       "name": "index",
       "path": "/",
       "redirect": "/giud",
