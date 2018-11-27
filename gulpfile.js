@@ -63,11 +63,11 @@ gulp.task('addComponentMd', function () {
 gulp.task('updateOtherMd', function () {
   gulp.src('template/install.md')
     .pipe(replace(/fileName/g, packageName))
-    .pipe(gulp.eventNames('examples/docs'))
+    .pipe(gulp.dest('examples/docs'))
   gulp.src('template/use.md')
     .pipe(replace(/fileName/g, packageName))
     .pipe(replace(/componentName/g, componentName))
-    .pipe(gulp.eventNames('examples/docs'))
+    .pipe(gulp.dest('examples/docs'))
 })
 
 gulp.task('updateREADME', function () {
@@ -78,4 +78,4 @@ gulp.task('updateREADME', function () {
     .pipe(gulp.dest('packages'))
 })
 
-gulp.task('default', ['addComponent', 'addCss', 'updateIndexCss', 'updateIndexJs', 'updateNav', 'addComponentMd', 'updateREADME'])
+gulp.task('default', ['addComponent', 'addCss', 'updateIndexCss', 'updateIndexJs', 'updateNav', 'addComponentMd', 'updateOtherMd', 'updateREADME'])

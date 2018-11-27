@@ -4,8 +4,8 @@
 
 ## 引用
 ```bash
-import componentName from 'fileNmae'
-import 'fileNmae/theme-default/lib/index.css'
+import componentName from 'fileName'
+import 'fileName/theme-default/lib/index.css'
 ```
 
 ## 强烈要求
