@@ -5,9 +5,7 @@
 
 二选一：
 1. npm方式：npm install
-2. yarn方式（推荐）：
-yarn config set phantomjs-prebuilt http://registry.npm.taobao.org/phantomjs-prebuilt
-yarn install
+2. yarn方式（推荐）：yarn install
 
 # 规范
 1. 组件命名： 以sx开头、以-为间隔（例：上传组件sx-upload-dialog，建议sxw init sx-upload-dialog初始化，不然只能改packages/package.json的name）
