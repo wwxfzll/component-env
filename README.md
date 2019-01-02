@@ -55,7 +55,6 @@ element-ui@^1.3.7:
 执行yarn install
 进入examples目录，打开main.js文件，将element-ui的样式引用调整为import 'element-ui/lib/theme-default/index.css'
 
-
 2. 如果要用其他版本可自行调整
 
 ### author:wwx

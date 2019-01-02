@@ -18,6 +18,7 @@ gulp.task('addComponent', function () {
     .pipe(replace(/xxx/, author))
     .pipe(replace(/xxxx-xx-xx/, new Date().toLocaleDateString()))
     .pipe(replace(/componentName/g, componentName))
+    .pipe(replace(/fileName/, packageName))
     .pipe(gulp.dest('packages/components/' + packageName))
 })
 
