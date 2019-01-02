@@ -42,5 +42,18 @@ npm config set registry https://registry.npm.taobao.org
 2. yarn:
 yarn config set registry https://registry.npm.taobao.org
 
+# Element-UI版本问题
+1. 目前易交易上element-ui的版本为1.3.7，将package.json中的element-ui版本调整为1.3.7，yarn.lock中的element-ui版本调整为1.3.7
+element-ui@^1.3.7:
+  version "1.3.7"
+  resolved "http://registry.npm.taobao.org/element-ui/download/element-ui-1.3.7.tgz#ed6e2e371b767fd7b8a8015dc284e4af5e940026"
+  dependencies:
+    async-validator "1.6.9"
+    babel-helper-vue-jsx-merge-props "^2.0.0"
+    deepmerge "^1.2.0"
+    throttle-debounce "^1.0.1"
+执行yarn install
+
+2. 如果要用其他版本可自行调整
 
 ### author:wwx
