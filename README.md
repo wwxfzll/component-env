@@ -15,15 +15,16 @@
 # 命令说明
 1. npm run addC 自动化添加和调整组件及其相关文件内容
 2. npm run dev 组件开发
-3. npm run build 生成组件效果、api的demo页面
-4. npm run svn 生成svn版本命令（注意svn安装地址是否与svn_update命令内的地址一致，若不一致需要手动调整svn_update）
-5. npm run comp 编译组件提供外部使用，并为上传到公司npm库做准备
-6. 进入packages目录，打开README.md文件，调整当前版本的网址，增加历史版本的网址
-6. npm config set registry http://192.168.118.166:4873/
-7. npm login （用户、密码、邮箱）
-8. 进入packages目录，npm publish 发布到npm库
-9. 访问 http://192.168.118.166:4873/ 查看相应组件内容
-10. npm unpublish 组件名@版本 撤销组件某个版本（慎重）
+3. 进入examples/docs目录，打开install.md文件，调整当前组件版本
+4. npm run build 生成组件效果、api的demo页面
+5. npm run svn 生成svn版本命令（注意svn安装地址是否与svn_update命令内的地址一致，若不一致需要手动调整svn_update）
+6. npm run comp 编译组件提供外部使用，并为上传到公司npm库做准备
+7. 进入packages目录，打开README.md文件，调整当前版本的网址，增加历史版本的网址
+8. npm config set registry http://192.168.118.166:4873/
+9. npm login （用户、密码、邮箱）
+10. 进入packages目录，npm publish 发布到npm库
+11. 访问 http://192.168.118.166:4873/ 查看相应组件内容
+12. npm unpublish 组件名@版本 撤销组件某个版本（慎重）
 
 # 版本变化规则
 1. 版本格式：xx.xx.xx(例：默认从1.0.0开始)
