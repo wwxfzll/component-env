@@ -15,11 +15,11 @@
 # 命令说明
 1. npm run addC 自动化添加和调整组件及其相关文件内容
 2. npm run dev 组件开发
-3. 进入examples/docs目录，打开install.md文件，调整当前组件版本
+3. 进入examples/docs目录：打开install.md文件，调整当前组件版本；打开giud.md文件，添加版本更新日志说明
 4. npm run build 生成组件效果、api的demo页面
-5. npm run svn 生成svn版本命令（注意svn安装地址是否与svn_update命令内的地址一致，若不一致需要手动调整svn_update）
+5. npm run svn 生成svn版本命令（若之前已经执行成功过则无需再执行；注意svn安装地址是否与svn_update命令内的地址一致，若不一致需要手动调整svn_update）
 6. npm run comp 编译组件提供外部使用，并为上传到公司npm库做准备
-7. 进入packages目录，打开README.md文件，调整当前版本的网址，增加历史版本的网址
+7. 进入packages目录，打开README.md文件，调整当前版本的网址，增加历史版本的网址（第一次请说明该组件实现的功能）
 8. npm config set registry http://192.168.118.166:4873/
 9. npm login （用户、密码、邮箱）
 10. 进入packages目录，npm publish 发布到npm库

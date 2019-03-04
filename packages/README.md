@@ -1,6 +1,7 @@
 # component
 
 > 组件名
+组件功能说明
 
 ## demo
 <a href=''></a>
@@ -12,4 +13,4 @@
 <a href=''></a>
 
 
-## author: 
+## author:
