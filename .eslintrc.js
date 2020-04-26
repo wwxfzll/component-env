@@ -1,27 +1,27 @@
 // https://eslint.org/docs/user-guide/configuring
 
 module.exports = {
-  root: true,
-  parser: 'babel-eslint',
-  parserOptions: {
-    sourceType: 'module'
+  root: true,//目录追溯
+  env: {//语法解析、全局变量
+      node: true
   },
-  env: {
-    browser: true,
+  parserOptions: {//解析器
+      parser: "babel-eslint"
   },
-  // https://github.com/standard/standard/blob/master/docs/RULES-en.md
-  extends: 'standard',
-  // required to lint *.vue files
-  plugins: [
-    'html'
+  extends: [//规则限制
+      "plugin:vue/essential",
+      "prettier"
   ],
-  // add your custom rules here
-  'rules': {
-    // allow paren-less arrow functions
-    'arrow-parens': 0,
-    // allow async-await
-    'generator-star-spacing': 0,
-    // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
-  }
+  plugins: [//提示额外处理
+      "prettier",
+      "vue"
+  ],
+  rules: {//覆盖规则
+      "prettier/prettier": ["error", {
+          "endOfLine": "auto"
+      }],
+      "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
+      "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off"
+  },
 }
+
